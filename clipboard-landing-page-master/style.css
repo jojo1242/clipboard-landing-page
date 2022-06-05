@@ -1,0 +1,247 @@
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --StrongCyan2: hsl(170, 70%, 27%);
+    --LightBlue: hsl(233, 76%, 61%);
+    --LightBlue2: hsl(233, 45%, 50%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    height: 100vh;
+    font-size: 18px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1, h2, h3 {
+    color: rgb(94, 94, 94);
+  }
+  h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.1em;
+    color: var(--GrayishBlue);
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover, i:hover {
+    color: var(--StrongCyan);
+  }
+  .flex {
+    display: flex;
+    margin: 3em 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex>div {
+    flex: 1;
+    padding: 2em;
+  }
+  header {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 5em 0 3em 0;
+    text-align: center;
+  }
+  header .context {
+    max-width: 900px;
+  }
+  .logo {
+    padding: 2em;
+    width: 250px;
+  }
+  button {
+    padding: 1.5em 3em;
+    border: 0;
+    border-radius: 35px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 3em 0.5em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    opacity: 0.95;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .ios {
+    background: var(--StrongCyan);
+    box-shadow: 0px 4px 0px 0px var(--StrongCyan2);
+  }
+  .mac {
+    background: var(--LightBlue);
+    box-shadow: 0px 4px 0px 0px var(--LightBlue2);
+  }
+  .container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  section {
+    text-align: center;
+    margin: 6em 0;
+  }
+  .context {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .content>div {
+    margin-bottom: 4em;
+    text-align: left;
+  }
+  .content>div h3 {
+    margin-bottom: 0.5em;
+  }
+  .content>div p {
+    line-height: 40px;
+  }
+  .image img {
+    width: 130%;
+    transform: translateX(-30%);
+  }
+  .icons {
+    width: 80px;
+    height: auto;
+  }
+  .brands {
+    padding: 0 3em;
+    flex-wrap: wrap;
+  }
+  .brands img {
+    justify-content: space-evenly;
+    max-width: 7em;
+    margin: 1em;
+  }
+  footer {
+    background: rgb(230, 230, 230);
+    color: #fff;
+    font-size: 23px;
+  }
+  footer li {
+    padding: 0.3em;
+  }
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  footer .logo {
+    max-width: 15%;
+  }
+  .social-links {
+    max-width: 20%;
+  }
+  footer img {
+    max-width: 50px;
+  }
+  .footer-nav {
+    display: flex;
+  }
+  .footer-nav>ul {
+    flex: 1;
+  }
+  footer .flex>div {
+    padding-bottom: 0;
+  }
+  footer a, i {
+    color: rgb(94, 94, 94);
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  i {
+    padding: 0.3em;
+  }
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media only screen and (max-width: 660px) {
+    h1 {
+        font-size: 2.2em;
+   }
+    header {
+        background: url(../images/bg-header-mobile.png) no-repeat;
+        background-size: cover;
+   }
+    button {
+        width: 100%;
+        margin: 2em 0.5em 0em 0.5em;
+   }
+    .flex {
+        flex-direction: column;
+   }
+    section {
+        margin: 3em 0;
+   }
+    .image img {
+        width: 100%;
+        transform: translateX(0%);
+   }
+    .content>div {
+        text-align: center;
+   }
+    .context {
+        padding: 1.5em;
+   }
+    .brands {
+        padding: 0;
+   }
+    .brands img {
+        max-width: 40%;
+        margin: 2em 0;
+   }
+    footer {
+        text-align: center;
+        font-size: 1.5em;
+   }
+    .footer-nav {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+   }
+    footer .flex>div {
+        padding: 0;
+   }
+    .social-links {
+        max-width: 100%;
+        margin-top: 1em;
+   }
+    ul {
+        margin: 0;
+   }
+    li {
+        padding: 0;
+        padding-bottom: 1em;
+   }
+    footer .logo img {
+        max-width: 2.5em;
+        margin: 2em 0;
+   }
+  }
